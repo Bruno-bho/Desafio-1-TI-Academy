@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cor-escura: #212121;
+    --cor-botao-home: #F9A825;
+    --cor-botao-contato: red;
+    --font-padrao: helvetica;
+    --cor-branco: #fff;
+    --cor-preto: #000;
+}
+
+.flex {
+    display: flex;
+}
+
+
+header {
+    height: 40px;
+    width: 100%;
+    background-color: var(--cor-escura);
+}
+
+header div#divHeader {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+header div div#logotipo {
+    font-family: var(--font-padrao);
+    color: var(--cor-branco);
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    font-family: var(--font-padrao);
+    color: var(--cor-branco);
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: var(--font-padrao);
+    font-size: 0.7rem;
+}
+
+header div nav a.home {
+    background-color: var(--cor-botao-home);
+    height: auto;
+    border-radius: 25px;
+    padding: 3px 15px 3px 15px;
+    color: var(--cor-branco);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+header div nav a.contato {
+    color: var(--cor-branco);
+    padding: 3px 10px 3px 10px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+header div nav a.contato:hover {
+    background-color: var(--cor-botao-contato);
+}
+
+header div nav a.sobre {
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#box-main {
+    width: 60%;
+    height: auto;
+    padding: 120px;
+    display: inline-flex;
+
+}
+
+.pontilhado {
+    border-right: 1px dotted var(--cor-preto);
+    width: 50%;
+    height: auto;
+    margin-left: 7px;
+}
+
+
+.email {
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 7px;
+}
+
+.btn {
+    margin-top: 15px;
+    width: auto;
+    height: auto;
+    font-family: var(--font-padrao);
+    font-size: 0.6rem;
+}
+
+
+footer {
+    background-color: var(--cor-escura);
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+
+#textBruno {
+    color: var(--cor-branco);
+    font-family: var(--font-padrao);
+    font-size: 1rem;
+}
+
+.instrucao {
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+}
